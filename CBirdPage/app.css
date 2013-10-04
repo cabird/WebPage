@@ -1,0 +1,44 @@
+﻿body
+{
+    font-family: 'Segoe UI', sans-serif
+}
+
+.entry {
+    font-family: 'Times New Roman', serif;
+}
+
+.paper-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.booktitle {
+    font-style: italic
+}
+
+.centered {
+    marginght:auto;
+    
+}
+
+#container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#bibasftex-content {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
