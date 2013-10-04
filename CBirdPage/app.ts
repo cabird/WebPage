@@ -16,6 +16,7 @@ Handlebars.registerHelper('authorHelper', function (authors: string) {
 class BibtexGetter {
     element: HTMLElement;
     span: HTMLElement;
+    
 
     constructor(element: HTMLElement) {
         this.element = element;
@@ -23,6 +24,17 @@ class BibtexGetter {
         this.element.appendChild(this.span);
     }
 
+    pubs: any;
+
+    GetPaperLinks() {
+        this.pubs = new Object();
+        var pubs = this.pubs;
+        $.getJSON("https://api.github.com/repos/cabird/cv/contents/pubs", function (data) {
+            for (var i = 0; i < data.length; i++) {
+                pubs[data[i].name] = data[i]._links.html + "?raw=true";
+            }
+        });
+    }
 
 
     load() {
@@ -48,6 +60,33 @@ class BibtexGetter {
                 element.appendChild(a);
             }
 
+            $(".show_bibtex_link").click(function (event) {
+                var icon = $(this).children(".ui-icon");
+                $(event.target).siblings(".bibtex").slideToggle(function () {
+                    
+                    if ($(this).is(":hidden")) {
+                        icon.removeClass().addClass("ui-icon").addClass("icon ui-icon-carat-1-s");
+                    } else
+                    {
+                        icon.removeClass().addClass("ui-icon").addClass("icon ui-icon-carat-1-n");
+                    }
+                }
+                    );
+            });
+
+            $(".show_abstract_link").click(function (event) {
+                var icon = $(this).children(".ui-icon");
+                $(event.target).siblings(".abstract").slideToggle(function () {
+
+                    if ($(this).is(":hidden")) {
+                        icon.removeClass().addClass("ui-icon").addClass("icon ui-icon-carat-1-s");
+                    } else {
+                        icon.removeClass().addClass("ui-icon").addClass("icon ui-icon-carat-1-n");
+                    }
+                }
+                    );
+            });
+
         }
         );
     }
@@ -68,8 +107,11 @@ var formatBibtex= function(entry) {
 }
 
 window.onload = () => {
-    //$("#tabs").tabs();
+    $("#tabs").tabs();
     var bibtexGetter = new BibtexGetter(document.getElementById('bibtex-content'));
     bibtexGetter.load();
+    bibtexGetter.GetPaperLinks();
+
+
 
 };

@@ -15,13 +15,20 @@
     <script src="app.js"></script>
 
     <script id="bibtex-entry-template" type="text/x-handlebars-template">
-        <div class="entry" id="{{KEY}}">
+        <div class="entry ui-corner-all" id="{{KEY}}">
             <div class="paper-title">{{TITLE}}</div>
             <div>
                 <span class="author">{{authorHelper AUTHOR}}.</span> In <span class="booktitle">{{VENUE}},</span> <span class="year">{{YEAR}}</year>
             </div>
+            <div>
+        <span class="show_bibtex_link">BibTeX<span class="ui-icons ui-icon-carat-1-s"></span> </span>
+        <span class="show_abstract_link">Abstract<span class="ui-icons ui-icon-carat-1-s"></span> </span> 
+        
             <div class="bibtex">
                 <pre>{{BIBTEX}}</pre>
+            </div>
+            <div class="abstract">
+                {{ABSTRACT}}
             </div>
         </div>
     </script>
