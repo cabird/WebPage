@@ -1,0 +1,84 @@
+/* ---------------- */
+/* Custom Style		*/
+/* ---------------- */
+
+/*
+	This file should be customized to work properly. Enter the desired colors
+	in the lines marked for the perfect functioning of the color scheme.
+	
+	Replace the fields like "#COLOR1", "#COLOR2", ... with your hexadecimal color.
+	Example: 
+		1. From "#COLOR1" to "#BB2222" - Red 1
+		2. From "#COLOR2" to "#CC3333" - Red 2
+		3. From "#COLOR3" to "#DD4444" - Red 3
+		4. From "#COLOR4" to "#FF6666" - Red 4
+
+	Thanks for purchase this item.
+	Don't forget to rate us!
+*/
+
+/* ---------------- */
+/* Blue Style		*/
+/* ---------------- */
+
+/* Color 1 | #112233 */
+/* ---------------- */
+nav#nav ul li a.active, nav#nav ul li a.active:hover, nav#nav ul li a.active:focus,
+ul.bjqs-controls li a:hover, ul.bjqs-controls li a:focus,
+ol.bjqs-markers li a:hover, ol.bjqs-markers li.active-marker a, .bgLight, .progress span, .jspDrag, .box-img-post,
+#field-send:hover, #field-send:focus, .btn.groups.active:hover, .btn.groups.active:focus,
+#portfolio-page .da-thumbs li a span.spanbtn:hover,  #portfolio-page .da-thumbs li a span.spanbtn:focus
+{ background-color: #112233; }
+
+ul.bjqs-controls li a, ol.bjqs-markers li a, a:hover, a:focus,
+input[type="text"]:focus, input[type="password"]:focus, .input:focus, select:focus, textarea:focus, span.feat
+{ color: #112233; }
+
+ol.bjqs-markers li a, ol.bjqs-markers li a:hover, ol.bjqs-markers li.active-marker a,
+.btn:hover, .btn:focus, .btn:active, .btn.groups.active, .btn.groups:hover, .btn.groups:focus,
+input[type="text"]:focus, input[type="password"]:focus, .input:focus, select:focus, textarea:focus,
+#field-send:hover, #field-send:focus
+{ border-color: #112233; }
+
+#rightSection #top nav#nav ul li.menu ul.other-menu, #rightSection #top nav#nav ul li.menu ul.other-menu li ul
+{ border-top-color: #112233; }
+
+
+/* Color 2 | #223344 */
+/* ---------------- */
+#mobile-nav-bt, #box-photo, #social a, a.readmore:hover, a.readmore:focus, a.readmore:active
+{ background-color: #223344; }
+
+#social a:hover, a:visited, a, a.readmore:visited, a.readmore, span.author
+{ color: #223344; }
+
+a.readmore:visited, a.readmore
+{ border: 1px solid #223344; }
+
+
+/* Color 3 | #334455 */
+/* ---------------- */
+.color-hover, #page h4:after, .btn:hover, .btn:focus, .btn:active, #field-send, #field-send,
+.btn.groups:hover, .btn.groups:focus,.btn.groups:active, .btn.groups.active, #leftSection ul li
+{ background-color: #334455; }
+::selection			{ background-color: #334455; }
+::-moz-selection	{ background-color: #334455; }
+
+.progress span, .jspDrag, h5, #page h1, #page h2, #page h3, #page h4, #page h6, #page label, #copyright p
+{ color: #334455; }
+
+#box-photo, #social a, #field-send, .line
+{ border-color: #334455; }
+
+ul.attributes li, ul.about li
+{ border-left-color: #334455; }
+
+
+/* Color 4 | #335577 */
+/* ---------------- */
+#leftSection #bio, #leftSection a.menu
+{ color: #335577; }
+
+#leftSection #columnLeft, #leftSection a.menu
+{ border-color: #335577; }
+

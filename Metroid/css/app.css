@@ -1,0 +1,65 @@
+﻿//body
+//{
+//    font-family: 'Segoe UI', sans-serif;
+//    background-color: #7398C3;
+//}
+
+.entry {
+    //font-family: 'Times New Roman', serif;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+margin: 15px 0;
+border: 2px solid rgba( 0, 0, 0, 0.2 );
+//border-radius: 5px;
+background-color: #eee;
+}
+
+.paper-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.booktitle {
+    font-style: italic
+}
+
+.centered {
+    marginght:auto;
+    
+}
+
+.show_bibtex_link .show_abstract_link {
+     font-family: 'Times New Roman', serif;
+     cursor: pointer;
+}
+
+.ui-icon-inline {
+    display: inline-block;
+}
+
+.bibtex {
+    display: none;
+    font-family: 'Courier New', monospace;
+    //background-color: #fff;
+}
+
+.abstract {
+    /*display: none;
+    background-color: #fff;
+    border-radius: 5px;*/
+}
+
+#container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
