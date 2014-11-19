@@ -170,7 +170,7 @@
 					autoReinitialise: true,
 					mouseWheelSpeed: 60,
 					animateScroll: true,
-					maintainPosition: false
+					maintainPosition:true
 				});
 			}			
 			
@@ -333,9 +333,9 @@
 		$('.to-top').click(function() { scrollto(0, 0); });
 		
 		// Replace the non-retina images to retina images
-		if (window.devicePixelRatio > 1) {
+		if (window.devicePixelRatio > 9999) {
 			var lowresImages = $('img');
-			images.each(function(i) {
+			lowresImages.each(function(i) {
 				var lowres = $(this).attr('src');
 				var highres = lowres.replace(".", "@2X.");
 				$(this).attr('src', highres);

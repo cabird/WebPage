@@ -42,29 +42,22 @@ var BibtexGetter = (function () {
                 var a = document.createElement("div");
                 a.innerHTML = template(entry);
                 element.appendChild(a);
+		if (!('ABSTRACT' in entry) || /^\s*$/.test(entry.ABSTRACT))
+		{
+		    /* hide the abstract link */
+		    $("#" + entry.KEY + " .show_abstract_link").hide();
+		}
+
             }
 
             $(".show_bibtex_link").click(function (event) {
-                var icon = $(this).children(".ui-icon");
-                $(event.target).siblings(".bibtex").slideToggle(function () {
-                    if ($(this).is(":hidden")) {
-                        icon.removeClass().addClass("ui-icon").addClass("ui-icon-carat-1-s").addClass("ui-icon-inline");
-                    } else {
-                        icon.removeClass().addClass("ui-icon").addClass("ui-icon-carat-1-n").addClass("ui-icon-inline");
-                    }
-                });
+                $(event.target).parents(".details").children(".bibtex").slideToggle();
+	    });
+            
+            $(".show_abstract_link").click(function (event) {
+                $(event.target).parents(".details").children(".abstract").slideToggle()
             });
 
-            $(".show_abstract_link").click(function (event) {
-                var icon = $(this).children(".ui-icon");
-                $(event.target).siblings(".abstract").slideToggle(function () {
-                    if ($(this).is(":hidden")) {
-                        icon.removeClass().addClass("ui-icon").addClass("icon ui-icon-carat-1-s");
-                    } else {
-                        icon.removeClass().addClass("ui-icon").addClass("icon ui-icon-carat-1-n");
-                    }
-                });
-            });
         });
     };
     return BibtexGetter;

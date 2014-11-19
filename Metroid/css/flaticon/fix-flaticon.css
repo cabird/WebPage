@@ -1,0 +1,11 @@
+.fix-flaticon {
+	margin-left: 0px;
+	font-size: 24px;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 24px;
+font-style: normal;
+margin-left: 0px;
+}

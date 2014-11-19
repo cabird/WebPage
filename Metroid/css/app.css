@@ -9,9 +9,13 @@
     margin-bottom: 20px;
     padding: 10px 20px;
 margin: 15px 0;
-border: 2px solid rgba( 0, 0, 0, 0.2 );
-//border-radius: 5px;
-background-color: #eee;
+border-left-width: 1px;
+border-left-style: solid;
+border-bottom: 3px solid #E9E9E9;
+}
+
+.details {
+    margin-top: 10px;
 }
 
 .paper-title {
@@ -20,7 +24,7 @@ background-color: #eee;
 }
 
 .booktitle {
-    font-style: italic
+
 }
 
 .centered {
@@ -28,9 +32,10 @@ background-color: #eee;
     
 }
 
-.show_bibtex_link .show_abstract_link {
-     font-family: 'Times New Roman', serif;
-     cursor: pointer;
+.show_bibtex_link, .show_abstract_link, .pdf_link {
+    margin-right: 8px; 
+    cursor:pointer;
+    display:inline-block;
 }
 
 .ui-icon-inline {
@@ -40,6 +45,7 @@ background-color: #eee;
 .bibtex {
     display: none;
     font-family: 'Courier New', monospace;
+    font-size: 75%;
     //background-color: #fff;
 }
 
